@@ -1,24 +1,4 @@
 # montyhall
 
-## Project setup
-```
-yarn install
-```
+Realização do jogo de Montyhall, onde temos que adivinhar a porta que o premio se encontra, feito em Vuejs.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
