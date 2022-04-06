@@ -2,13 +2,13 @@
     <div id="app">
         <h1>Problema de Monty Hall</h1>
         <div class="form">
-            <div v-if="!statred">
-                <label for="portsAmount">Quantas portas?</label>
+            <div v-if="!started">
+                <label for="portsAmount">Quantas portas? </label>
                 <input type="text" id="portsAmount" size="3"
                     v-model.number="portsAmount">
             </div>
             <div v-if="!started">
-                <label for="selectedPort">Qual porta é premiada? </label> 
+                <label for="selectedPort">Qual porta é premiada? </label>
                 <input type="text" id="selectedPort" size="3"
                     v-model.number="selectedPort">
             </div>
@@ -24,8 +24,7 @@
 </template>
 
 <script>
-import DoorWhat from './components/DoorWhat.vue'
-
+import DoorWhat from './components/DoorWhat'
 export default {
     name: 'App',
     components: { DoorWhat },
@@ -41,28 +40,24 @@ export default {
 
 <style>
 * {
-    box-sizing:border-box;
-    /* font-family: 'Montserrat', sans-serif; */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-
 body {
-    color: #fff;
-    background: linear-gradient(to right, rgb(21, 153, 87), rgb(21,87, 153));
+    color: #FFF;
+    background: linear-gradient(to right, rgb(21, 153, 87), rgb(21, 87, 153));
 }
-
 #app {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #app h1 {
     border: 1px solid #000;
     background-color: #0004;
     padding: 20px;
     margin-bottom: 60px;
 }
-
 .form {
     display: flex;
     flex-direction: column;
@@ -70,17 +65,14 @@ body {
     align-items: center;
     margin-bottom: 40px;
 }
-
-.form, .from input, .form button {
+.form, .form input, .form button {
     margin-bottom: 10px;
     font-size: 2rem;
 }
-
 .doors {
     align-self: stretch;
     display: flex;
     justify-content: space-around;
-
     flex-wrap: wrap;
 }
 </style>
